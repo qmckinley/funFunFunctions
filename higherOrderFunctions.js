@@ -6,7 +6,6 @@ var animals = [
     { name: 'Ursula', species: 'cat' },
     { name: 'Jimmy', species: 'fish' }
 ]
-
 // For Loop
 var dogs = []
 for (var i = 0; i < animals.length; i++) {
@@ -18,7 +17,6 @@ for (var i = 0; i < animals.length; i++) {
 var dogs = animals.filter(function(animal) {
     return animal.species === 'dog'
 })
-
 // 
 var isDog = function(animal) {
     return animal.species === 'dog'
@@ -45,7 +43,6 @@ var totalAmount = 0;
 for (var i = 0; i < orders.length; i++) {
     totalAmount += orders[i].amount
 }
-
 // Reduce
 var totalAmount = orders.reduce(funtion(sum, order) {
     return sum + order.amount
